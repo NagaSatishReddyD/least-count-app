@@ -1,12 +1,49 @@
-# React + Vite
+# 🧮 Least Count Score Card App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[Live Demo](https://least-count-app.vercel.app) | [![Vercel Status](https://vercelbadge.vercel.app/api/nagasatishdwarampudi/least-count-app)](https://vercel.com)
 
-Currently, two official plugins are available:
+A lightweight, mobile-friendly, and offline-capable app to track **Least Count card game scores**. Designed for friends and families playing multi-round card games where the **goal is to keep the lowest score**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📸 Screenshot
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![App Screenshot](public/screenshot.png) <!-- optional if you have one -->
+
+---
+
+## ✨ Features
+
+- 🎮 Add any number of players dynamically
+- 🧾 Track scores round by round
+- 🧠 Automatically marks players OUT when max score is reached
+- 🏆 Displays current winner(s) in sticky header
+- 🔁 Restart or reset game at any time
+- 💾 **Auto-save game data in browser** using `localStorage`
+- 📱 Fully responsive — works great on mobile and desktop
+- 🌐 Deployable on any static site host (e.g., Vercel, Netlify)
+
+---
+
+## 🚀 Live Demo
+
+👉 [https://least-count-app.vercel.app](https://least-count-app.vercel.app)
+
+---
+
+## 🛠️ Tech Stack
+
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [Vercel](https://vercel.com) for deployment
+- Vanilla CSS (no external frameworks)
+
+---
+
+## 🧰 Installation & Setup
+
+```bash
+git clone https://github.com/YOUR_USERNAME/least-count-app.git
+cd least-count-app
+npm install
+npm run dev     # Starts the dev server at http://localhost:5173
