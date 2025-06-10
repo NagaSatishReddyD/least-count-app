@@ -79,3 +79,15 @@
   color: green;
   font-weight: bold;
 }
+
+.header-logo-text {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-img {
+  height: 150px;
+  width: 150px;
+  object-fit: contain;
+}

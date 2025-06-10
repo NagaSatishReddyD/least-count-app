@@ -90,18 +90,18 @@ export default function App() {
   return (
     <div className="wrapper">
       <div className="container">
-        <div className="sticky-header">
-          <h1>Least Count Score Card</h1>
-
+        <div className="header-logo-text">
+          <img src="/least_count_icon.png" alt="Least Count Logo" className="logo-img" />
           <div className="button-group">
-            <button className="nav-button" onClick={restartGame}>
-              🔁 Restart
-            </button>
             <button className="nav-button" onClick={resetToHome}>
               🏠 Home
             </button>
+            <button className="nav-button" onClick={restartGame}>
+              🔁 Restart
+            </button>
           </div>
         </div>
+
         <div>
           {winners.length > 0 && (
             <div className="winner-text">
@@ -111,7 +111,7 @@ export default function App() {
           )}
         </div>
 
-         {/* 🔄 Show continue prompt if needed */}
+        {/* 🔄 Show continue prompt if needed */}
         {hasSavedGame && !loadingFromSave && players.length === 0 ? (
           <div className="card">
             <h3>Continue your last game?</h3>
