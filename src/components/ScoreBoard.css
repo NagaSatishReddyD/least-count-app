@@ -1,0 +1,63 @@
+.score-header,
+.score-row,
+.score-footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  gap: 8px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.score-input {
+  padding: 8px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.score-input.exceeded {
+  border: 2px solid red;
+  background: #ffe5e5;
+}
+
+.add-round {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.add-round:hover {
+  background-color: #218838;
+}
+
+.total-score.in {
+  color: green;
+  font-weight: bold;
+}
+
+.total-score.out {
+  color: red;
+  font-weight: bold;
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+
+.score-grid {
+  display: grid;
+  grid-auto-rows: min-content;
+  min-width: max-content; /* <-- Key to allow scroll */
+  gap: 8px;
+  padding-bottom: 10px;
+}
+
+.score-scroll-wrapper {
+  overflow-x: auto;
+  width: 100%;
+}

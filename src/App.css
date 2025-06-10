@@ -3,40 +3,79 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  scroll: auto
+}
+/* Centered content */
+.container {
+  width: 100%;
+  max-width: 600px;
+  /* background: #ffffff; */
+  padding: 0;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Sticky header */
+.sticky-header {
+  position: sticky;
+  top: 0;
+  /* background-color: #ffffff; */
+  padding: 16px 24px;
+  z-index: 1000;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input, .score-input, select {
+  width: 100%;
+  max-width: fit-content;
+  margin-bottom: 10px;
+  padding: 8px;
+  font-size: 1rem;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.button-group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
-.card {
-  padding: 2em;
+.dropdown {
+  /* margin: 16px 0; */
+  margin-bottom: 20px;
 }
 
-.read-the-docs {
-  color: #888;
+.nav-button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  max-width: 200px;
+}
+
+.card, .scoreboard {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 20px;
+  align-items: center;
+  display: grid;
+  justify-content: center;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.winner-text {
+  font-size: 1rem;
+  margin-top: 4px;
+  color: green;
+  font-weight: bold;
 }
