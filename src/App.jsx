@@ -10,9 +10,10 @@ export default function App() {
   const [scores, setScores] = useState([]);
   const [hasSavedGame, setHasSavedGame] = useState(false);
   const [loadingFromSave, setLoadingFromSave] = useState(false);
+  const adsenseID = import.meta.env.VITE_GOOGLE_ADSENSE_PUB_ID;
 
   // 🔍 Check for saved data on first load
-  useEffect(() => {
+  useEffect(() => { 
     const saved = localStorage.getItem("least-count-game");
     console.log("Checking for saved game data:", saved);
     if (saved) {
@@ -91,7 +92,7 @@ export default function App() {
     <div className="wrapper">
       <ins className="adsbygoogle"
         style={{ display: "block" }}
-        data-ad-client="ca-pub-8753511442231304"   // your ID
+        data-ad-client={adsenseID} 
         data-ad-slot="YYYYYY"
         data-ad-format="auto"
         data-full-width-responsive="true"></ins>
