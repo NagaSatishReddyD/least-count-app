@@ -89,6 +89,16 @@ export default function App() {
 
   return (
     <div className="wrapper">
+      <ins className="adsbygoogle"
+        style={{ display: "block" }}
+        data-ad-client="ca-pub-8753511442231304"   // your ID
+        data-ad-slot="YYYYYY"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({ });
+      </script>
+
       <div className="container">
         <div className="header-logo-text">
           <img src="/least_count_icon.png" alt="Least Count Logo" className="logo-img" />
