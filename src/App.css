@@ -3,7 +3,9 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  scroll: auto
+  color-scheme: light;
+  background-color: #ffffff;
+  color: #000000;
 }
 /* Centered content */
 .container {
