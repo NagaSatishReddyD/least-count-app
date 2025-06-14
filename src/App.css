@@ -31,7 +31,7 @@
   border-bottom: 1px solid #ddd;
 }
 
-.input, .score-input, select {
+.input, select {
   width: 100%;
   max-width: fit-content;
   margin-bottom: 10px;

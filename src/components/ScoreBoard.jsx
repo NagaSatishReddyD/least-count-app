@@ -32,13 +32,13 @@ export default function ScoreBoard({
               <div className="cell">{rIdx + 1}</div>
               {players.map((_, pIdx) => (
                 <input
+                  id={`r${players[pIdx]}-${rIdx}-p${pIdx}`}
                   key={`r${rIdx}-p${pIdx}`}
                   type="number"
-                  className={`score-input ${
-                    totalScores[pIdx] >= maxScore ? "exceeded" : ""
-                  }`}
+                  className={`score-input ${totalScores[pIdx] >= maxScore ? "exceeded" : ""
+                    }`}
                   value={round[pIdx] === 0 ? "" : round[pIdx]}
-                  placeholder="0"
+                  placeholder={players[pIdx]}
                   onChange={(e) =>
                     onScoreChange(rIdx, pIdx, e.target.value)
                   }
