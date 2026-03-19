@@ -47,12 +47,6 @@ export default function ScoreBoard({
             </React.Fragment>
           ))}
 
-          <div className="add-round-container">
-            <button className="add-round" onClick={onAddRound}>
-              ➕ Add Round
-            </button>
-          </div>
-
           {/* Totals */}
           <div className="footer-cell">Total</div>
           {totalScores.map((t, idx) => (
@@ -64,6 +58,11 @@ export default function ScoreBoard({
             </div>
           ))}
         </div>
+      </div>
+      <div>
+        <button className="add-round" onClick={onAddRound}>
+          ➕ Add Round
+        </button>
       </div>
     </div>
   );
